@@ -9,9 +9,9 @@ cask 'slowquitapps' do
   appcast 'https://github.com/hyliang96/SlowQuitApps/releases.atom'
 
   depends_on macos: '>= :mojave'
-  
-  # bin.install 'sqa'
+
   app 'SlowQuitApps.app'
+  binary 'sqa'
 
   caveats <<-DESC
   Accessibility permissions must be reset after updating or re-installing.
