@@ -10,10 +10,8 @@ cask 'slowquitapps' do
 
   depends_on macos: '>= :mojave'
   
-  def install
-    bin.install 'sqa'
-    app 'SlowQuitApps.app'
-  end 
+  bin.install 'sqa'
+  app 'SlowQuitApps.app'
 
   caveats <<-DESC
   Accessibility permissions must be reset after updating or re-installing.
