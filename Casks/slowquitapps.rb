@@ -11,7 +11,7 @@ cask 'slowquitapps' do
   depends_on macos: '>= :mojave'
 
   def install
-    bin.install sqa
+    bin.install 'sqa'
   end
 
   app 'SlowQuitApps.app'
