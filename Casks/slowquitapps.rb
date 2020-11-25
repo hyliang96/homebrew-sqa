@@ -5,8 +5,8 @@ cask 'slowquitapps' do
   url "https://github.com/hyliang96/SlowQuitApps/releases/download/v#{version}/SlowQuitApps.zip"
   # url "https://github.com/dteoh/SlowQuitApps/releases/download/v#{version}/SlowQuitApps.zip"
   name 'SlowQuitApps'
-  homepage 'https://github.com/dteoh/SlowQuitApps'
-  appcast 'https://github.com/dteoh/SlowQuitApps/releases.atom'
+  homepage 'https://github.com/hyliang96/SlowQuitApps'
+  appcast 'https://github.com/hyliang96/SlowQuitApps/releases.atom'
 
   depends_on macos: '>= :mojave'
 
