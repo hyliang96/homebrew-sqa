@@ -1,6 +1,6 @@
 cask 'slowquitapps' do
-  version '0.8.0'
-  sha256 '4d994932b60968c58108f3d4c43798d8fa8fd2bd8c5b58bcf2882895fb27299d'
+  version '0.8.1'
+  sha256 '418ab46042087b52b656ee3b18854ec0a21593a2da2b341e3090715f035c18a2'
 
   url "https://github.com/dteoh/SlowQuitApps/releases/download/v#{version}/SlowQuitApps.zip"
   name 'SlowQuitApps'
@@ -8,6 +8,10 @@ cask 'slowquitapps' do
   appcast 'https://github.com/dteoh/SlowQuitApps/releases.atom'
 
   depends_on macos: '>= :mojave'
+
+  def install
+    bin.install sqa
+  end
 
   app 'SlowQuitApps.app'
 
